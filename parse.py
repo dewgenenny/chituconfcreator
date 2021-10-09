@@ -104,15 +104,16 @@ pp = pprint.PrettyPrinter(indent=4)
 with open('google_sheets_export.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-
+        print(row)
         model = row['3DP Model\r\n']
+        resin_brand = row['Resin Brand\r\n']
         resin_type = row['Resin Type\r\n']
         color = row['Color\r\n']
         bottom_exposures = row['Bottom Exposure(s)\r\n']
         normal_exposures = row['Normal Exposure(s)\r\n']
         layer_height = row['Layer Height(mm)\r\n']
 
-        profile_title = "@@Elegoo "+ resin_type + "(" + color + ")@@"
+        profile_title = "@@" + resin_brand + " " + resin_type + "(" + color + ")@@"
 
         all_settings[counter] = {"profile_title": profile_title, "bottom_exposures": bottom_exposures,"normal_exposures": normal_exposures,"layer_height": layer_height}
         with open(model+".cfg", "a") as myfile:
