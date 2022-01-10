@@ -1,10 +1,11 @@
 ## Chituconf creator
 
-This is a small python script to generate Chitu config profiles from shared online google sheets doc (eg the Elegoo one here: https://docs.google.com/spreadsheets/d/1_jnyMfNkm4sPJhKyN46ey5CO-ks4MRyR/edit#gid=1882856213)
+This is a small python script to generate Chitu config profiles from Elegoo's shared online google sheets doc (eg the Elegoo one here: https://docs.google.com/spreadsheets/d/1_jnyMfNkm4sPJhKyN46ey5CO-ks4MRyR/edit#gid=1882856213)
 
 This is a work in progress and currently only works for SATURN printers.
 
 The generated Saturn.cfg that is in this repository can be used to import the resin profiles for all Elegoo resins listed on their shared google sheet linked above, as of 12.09.2021.
 
-Please use the generated configs at your own risk, there's a chance that I screwed something up (but they're working for me :) )
+Please use the generated configs at your own risk. Changes to this repository are currently untested.
 
+This script is based on the work of dewgenenny.
